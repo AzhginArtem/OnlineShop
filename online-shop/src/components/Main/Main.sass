@@ -1,0 +1,48 @@
+.main
+  background: url('../../assets/mainBack.jpg')
+  min-height: 640px
+  position: relative
+  &::after
+    content: ''
+    display: block
+    height: 665px
+    background-image: url('../../assets/mainBorder.png')
+    background-repeat: no-repeat
+    background-position: center bottom
+  &__container
+    position: absolute
+    top: 150px
+    right: 390px
+    max-width: 530px
+  &__logo
+    font-weight: 600
+    font-size: 26px
+    line-height: 42px
+    color: #F6623E
+  &__title
+    font-weight: 600
+    font-size: 56px
+    line-height: 72px
+    color: #000000
+  &__subtitle
+    font-weight: 400
+    font-size: 16px
+    line-height: 29px
+    color: #454545
+  &__btn
+    margin-top: 40px
+    background: #F6623E
+    border: none
+    font-family: 'Jost'
+    width: 140px
+    height: 50px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    text-transform: uppercase
+    color: #FFFFFF
+    transition: .3s
+    &:hover
+      cursor: pointer
+      background: #d44623
+      color: #ffffff

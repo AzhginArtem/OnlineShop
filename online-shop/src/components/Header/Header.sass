@@ -1,0 +1,104 @@
+.header
+  width: 100%
+  max-height: 160px
+  &__settings
+    display: flex
+    justify-content: space-between
+    padding: 0 120px
+    background: #F6623E
+    height: 50px
+    align-items: center
+    &-title
+      color: #fff
+    &-container
+      display: flex
+      width: 235px
+      justify-content: space-between
+      position: relative
+    &-link
+      color: #fff
+      text-decoration: none
+      position: relative
+      &::after
+        content: ''
+        display: block
+        width: 1px
+        height: 30px
+        background: #fff
+        opacity: 0.3
+        position: absolute
+        right: -20px
+        top: 0
+    &-flag
+      position: absolute
+      right: 50px
+      top: 50%
+      transform: translateY(-50%)
+      width: 20px
+      height: 15px
+      &:hover
+        cursor: pointer
+    &-picker
+      display: block
+      font-family: 'Jost'
+      color: #fff
+      box-sizing: border-box
+      margin: 0
+      border: none
+      background-color: transparent
+      position: relative
+      &:hover
+        cursor: pointer
+      &::-ms-expand
+        display: none
+      &:focus
+        color: #fff
+        background: #F6623E
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 120px
+    height: 100px
+  &__menu
+    display: flex
+    min-width: 770px
+    justify-content: space-between
+    list-style: none
+  &__link
+    color: #454545
+    text-transform: uppercase
+    text-decoration: none
+    transition: .1s
+    &:hover
+      color: #b62f0d
+      border-bottom: 2px solid #b62f0d
+  &__btns
+    min-width: 55px
+    display: flex
+    justify-content: space-between
+    a
+      position: relative
+      transition: .3s
+      &:hover
+        transform: scale(1.1)
+  &__counter
+    position: absolute
+    top: 0
+    right: -5px
+    background: #F6623E
+    color: #fff
+    border-radius: 50%
+    width: 14px
+    font-size: 10px
+    text-align: center
+    align-items: center
+    display: flex
+    justify-content: center
+    height: 14px
+
+.activeItem
+  color: #F6623E
+  &:hover
+    color: #b62f0d
+    border: none

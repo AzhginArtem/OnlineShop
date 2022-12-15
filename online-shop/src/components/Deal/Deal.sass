@@ -1,0 +1,96 @@
+.deal
+  padding: 66px 120px
+  display: flex
+  flex-direction: column
+  &__title
+    font-weight: 500
+    font-size: 36px
+    line-height: 32px
+    color: #000000
+    text-align: center
+    margin-bottom: 20px
+  hr
+    display: block
+    margin: 0 auto
+    width: 130px
+    background: #F6623E
+    height: 4px
+    border: none
+    margin-bottom: 25px
+  &__subtitle
+    font-weight: 500
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #454545
+    max-width: 760px
+    margin: 0px auto 36px auto
+  &__container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 140px
+  &__card
+    min-height: 456px
+    display: flex
+    flex-direction: column
+    transition: .3s
+    &:hover
+      transform: scale(1.1)
+    &-back
+      position: relative
+      width: 400px
+      height: 410px
+      background: #F4F3F4
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 22px
+    &-title
+      font-weight: 500
+      max-width: 400px
+      font-size: 18px
+      line-height: 24px
+      text-align: center
+      color: #000000
+    &-sail
+      position: absolute
+      top: 11px
+      right: 11px
+      background: #F6623E
+      font-weight: 400
+      font-size: 10px
+      line-height: 10px
+      letter-spacing: 1px
+      color: #FFFFFF
+      padding: 5px 9px
+    &-prices
+      display: flex
+      margin: 0 auto
+    &-actual
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      margin-right: 20px
+      color: #F6623E
+    &-sale
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      text-decoration-line: line-through
+      color: #828181
+  &__features
+    display: flex
+    width: 1200px
+    margin: 0 auto
+    justify-content: space-between
+  &__feature
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    max-width: 284px
+    img
+      margin-bottom: 20px
+    &-subtitle
+      text-align: center
